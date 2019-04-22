@@ -394,7 +394,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Formulae Sheet"/>
+            <Property name="text" type="java.lang.String" value="Formula Sheet"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel2">
@@ -914,7 +914,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTextPane" name="resultado1">
+                <Component class="javax.swing.JTextPane" name="resultOutput">
                 </Component>
               </SubComponents>
             </Container>
@@ -971,7 +971,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTextPane" name="resultado">
+                <Component class="javax.swing.JTextPane" name="note">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f0" green="f0" id="Button.background" palette="3" red="f0" type="palette"/>

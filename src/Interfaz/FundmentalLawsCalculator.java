@@ -121,12 +121,12 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnCalculate = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
-        resultado1 = new javax.swing.JTextPane();
+        resultOutput = new javax.swing.JTextPane();
         jPanel16 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        resultado = new javax.swing.JTextPane();
+        note = new javax.swing.JTextPane();
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -295,7 +295,7 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
         );
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("Formulae Sheet");
+        jLabel4.setText("Formula Sheet");
 
         xInput.setPreferredSize(new java.awt.Dimension(6, 25));
         xInput.addActionListener(new java.awt.event.ActionListener() {
@@ -606,7 +606,7 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
             }
         });
 
-        jScrollPane4.setViewportView(resultado1);
+        jScrollPane4.setViewportView(resultOutput);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -636,10 +636,10 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
             }
         });
 
-        resultado.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
-        resultado.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        resultado.setText("Note: the most direct way to calculate any value will be taken with more priority. In The Forced Flow Law for calculating Xk, it will be used X and Vk rather than C, T and Ck to calculate it.");
-        jScrollPane2.setViewportView(resultado);
+        note.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
+        note.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        note.setText("Note: the most direct way to calculate any value will be taken with more priority. In The Forced Flow Law for calculating Xk, it will be used X and Vk rather than C, T and Ck to calculate it.");
+        jScrollPane2.setViewportView(note);
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
@@ -894,10 +894,10 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextField nInput;
     private javax.swing.JLabel nLabel;
+    private javax.swing.JTextPane note;
     private javax.swing.JTextField rInput;
     private javax.swing.JLabel rLabel;
-    private javax.swing.JTextPane resultado;
-    private javax.swing.JTextPane resultado1;
+    private javax.swing.JTextPane resultOutput;
     private javax.swing.JTextField skInput;
     private javax.swing.JLabel skLabel;
     private javax.swing.JTextField tInput;
@@ -1060,7 +1060,7 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
             }
             break;
         }
-        resultado.setText(unknownValue + " for this system is " + result);
+        resultOutput.setText(unknownValue + " for this system is " + result);
     }
 
     private void calculateLittlesLaw() {
@@ -1097,7 +1097,7 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this,"This value can't be obtained by Little's Law");        
         }
 
-        resultado.setText(unkwonValue + " for this system is " + result);
+        resultOutput.setText(unkwonValue + " for this system is " + result);
     }
 
     private void calculateUtilizationLaw() {
@@ -1177,7 +1177,7 @@ public class FundmentalLawsCalculator extends javax.swing.JFrame {
                 break;
         }
 
-        resultado.setText(unkwonValue + " for this system is " + result);
+        resultOutput.setText(unkwonValue + " for this system is " + result);
 
 }
 
@@ -1221,7 +1221,7 @@ private void calculateResponseTimeLaw() {
         break;
     }
 
-    resultado.setText(unknownValue + " for this system is " + result);
+    resultOutput.setText(unknownValue + " for this system is " + result);
     }
 
     private void getValues() {
